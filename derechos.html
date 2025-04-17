@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Derechos de Autor - JMT Produce</title>
+    <style>
+     
+        
+        /* Header */
+        header {
+            background-color: #111;
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+           
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+           
+        a {
+            text-decoration: none;
+            color: #ff6c00;
+        }
+        
+        .logo {
+            font-size: 28px;
+            font-weight: 700;
+            color: #ff5500;
+        }
+        
+        .logo span {
+            color: #fff;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 25px;
+        }
+        
+        nav ul li a {
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            color: #ff5500;
+        }
+        
+        .cart-icon {
+            font-size: 20px;
+            position: relative;
+        }
+        
+        .cart-count {
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            background: #ff5500;
+            color: white;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin-bottom: 30px;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: #ff5500;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: all 0.3s;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .btn:hover {
+            background: #ff3300;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(255, 85, 0, 0.3);
+        }
+        
+        /* Beats Section */
+        .section-title {
+            text-align: center;
+            margin: 60px 0 40px;
+            font-size: 2.5rem;
+        }
+        
+        .beats-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 30px;
+            padding: 0 5%;
+        }
+
+        body {
+            background-color: #f8f8f8;
+            color: #333;
+            line-height: 1.6;
+            padding: 30px;
+            max-width: 800px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .document-container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            width: 100%;
+            margin-bottom: 30px;
+        }
+        
+        h1 {
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 2.2rem;
+            color: #FF6B00; /* Naranja */
+            border-bottom: 2px solid #FF6B00;
+            padding-bottom: 10px;
+            width: 100%;
+        }
+        
+        h2 {
+            text-align: center;
+            margin: 25px 0;
+            font-size: 1.8rem;
+            color: #FF6B00; /* Naranja */
+        }
+        
+        h3 {
+            text-align: center;
+            margin: 25px 0 15px 0;
+            font-size: 1.4rem;
+            color: #FF6B00; /* Naranja */
+            border-bottom: 1px solid #FF6B00;
+            padding-bottom: 8px;
+            display: inline-block;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .date {
+            font-style: italic;
+            margin-bottom: 25px;
+            text-align: center;
+            color: #666;
+        }
+        
+        .highlight {
+            font-weight: bold;
+            color: #0066cc;
+        }
+        
+        .section-container {
+            margin: 30px 0;
+            text-align: center;
+        }
+        
+        .contact-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+        
+        .contact-button {
+            padding: 12px 25px;
+            border-radius: 5px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .whatsapp-button {
+            background-color: #25D366;
+            color: white;
+        }
+        
+        .email-button {
+            background-color: #FF6B00;
+            color: white;
+        }
+        
+        .contact-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .signature {
+            margin-top: 50px;
+            border-top: 1px solid #ccc;
+            padding-top: 30px;
+            text-align: center;
+        }
+        
+        .signature-line {
+            display: inline-block;
+            width: 250px;
+            border-top: 1px solid #333;
+            margin: 30px 20px 0 0;
+        }
+        
+        @media (max-width: 600px) {
+            body {
+                padding: 20px;
+            }
+            .document-container {
+                padding: 25px;
+            }
+            h1 {
+                font-size: 1.8rem;
+            }
+            .contact-buttons {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html"></a>
+
+    
+    <!-- Header -->
+    <header>
+        <div class="logo">JMT<span>produce</span></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                
+               
+                
+            </ul>
+        </nav>
+    </header>
+    <div class="document-container">
+        <h1>DERECHOS</h1>
+        
+        <h2>Derechos de Autor</h2>
+        <p class="date">Fecha: <span id="current-date"></span></p>
+        
+        <div class="section-container">
+            <p><span class="highlight">JMT PRODUCE</span> (en adelante denominado EL AUTOR) y <span class="highlight">(Ambas/PERSONA) NOMBRE DEL COMPRADOR</span> (En adelante denominado "Receptor") y de conformidad con los términos establecidos en este contrato cabe al comprador / receptor los derechos exclusivos, para usar el local producido por JMT Produce llamado "NOMBRE DEL BEAT".</p>
+            
+            <p>El receptor posee los derechos exclusivos, transferibles para el uso de la música, mientras se ajusten autorizaciones adicionales a las composiciones musicales (en adelante denominados "la sincronización"). El receptor tiene derecho de recibir rendimiento y distribuir la sincronización ilimitadamente.</p>
+            
+            <p>Este es un contrato único de derechos exclusivos y cuenta con las siguientes Cláusulas, beneficios y restricciones.</p>
+        </div>
+        
+        <div class="section-container">
+            <h3>Cláusulas</h3>
+            <p>"EL AUTOR" cederá a favor del "RECEPTOR" todos los derechos relativos de la colección musical titulada (NOMBRE DEL BEAT).</p>
+            
+            <p>Todos los derechos que son ocultos en este contrato, a favor de el "RECEPTOR" incluyen la capacidad distribuir, explotar en forma comercial o por cualquier forma posible el objeto de esta contrata.</p>
+            
+            <p>Como corresponde, se realizarán los pagos correspondientes a EL AUTOR la cantidad de $199.99 dólares (Ciento noventa y nueve punto noventa y nueve).</p>
+            
+            <p>EL AUTOR queda conforme y autoriza a "EL RECEPTOR" para realizar cualquier modificación ya sea precisamente o por la intervención de algún tercero.</p>
+        </div>
+        
+        <div class="section-container">
+            <h3>Beneficios</h3>
+            <p>El receptor puede distribuir la sincronización en plataformas digitales, por ejemplo: iTunes, CD Baby, Amazon, Deezer, Spotify, Google Play, Etc.</p>
+            
+            <p>Usar la sincronización para presentaciones/eventos.</p>
+        </div>
+        
+        <div class="signature">
+            <div class="signature-line"></div> EL AUTOR (JMT Produce)
+            <div class="signature-line"></div> EL RECEPTOR
+        </div>
+    </div>
+
+    <div class="contact-buttons">
+        <a href="https://wa.me/numero-de-telefono" class="contact-button whatsapp-button" target="_blank">
+            Contactar por WhatsApp
+        </a>
+        <a href="mailto:onebeat1985@gmail.com" class="contact-button email-button">
+            Contactar por Email
+        </a>
+    </div>
+
+    <script>
+        // Mostrar la fecha actual
+        const today = new Date();
+        const options = { year: 'numeric', month: 'long', day: 'numeric' };
+        document.getElementById('current-date').textContent = today.toLocaleDateString('es-ES', options);
+    </script>
+</body>
+</html>
