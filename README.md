@@ -1,1 +1,1 @@
-# tienda-de-beats
+# tienda-de-beats el espacio ideal para productores musicales que quieren vender sus beats de manera sencilla y profesional. Nuestra tienda está diseñada como una plantilla versátil y moderna, creada con HTML, JavaScript y CSS, lo que garantiza rapidez, funcionalidad y una excelente experiencia para los usuarios.
